@@ -33,6 +33,12 @@ npm run server:watch
 npm run assets:watch
 ```
 
+### Deployment
+
+```bash
+./bin/deploy.sh
+```
+
 ### Contributing
 
 Checkout the [TODO](TODO.md) doc for what needs to be worked on.
