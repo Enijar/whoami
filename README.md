@@ -20,6 +20,7 @@ npm run assets:build
 Start the server
 
 ```bash
+npm run assets:build
 npm run server:start
 ```
 
