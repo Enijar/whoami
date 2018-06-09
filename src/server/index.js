@@ -1,7 +1,7 @@
-import config from "../../config";
 import path from "path";
-import {renderToString} from "react-dom/server";
+import React from "react";
 import express from "express";
+import config from "../../config";
 import AppController from "./Controllers/AppController";
 
 const app = express();
