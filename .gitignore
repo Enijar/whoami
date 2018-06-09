@@ -1,0 +1,9 @@
+.idea/
+node_modules/
+build/
+public/css/
+public/js/
+.DS_Store
+*.log
+*.map
+config.json
