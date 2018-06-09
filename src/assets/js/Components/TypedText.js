@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 export default class TypedText extends Component {
     static propTypes = {
+        speed: PropTypes.number,
         onComplete: PropTypes.func
     };
 

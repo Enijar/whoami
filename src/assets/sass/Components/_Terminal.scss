@@ -1,6 +1,16 @@
 .Terminal {
+  font-family: monospace;
+
   span {
     display: inline-block;
     vertical-align: middle;
+  }
+
+  &__command {
+    margin-bottom: 0.5em;
+  }
+
+  &__output {
+    margin-bottom: 1em;
   }
 }
