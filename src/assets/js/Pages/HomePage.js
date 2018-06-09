@@ -14,6 +14,7 @@ export default class HomePage extends Component {
             {
                 id: 'skills',
                 text: 'skills',
+                delay: 1000,
                 execute: false,
                 complete: false
             },
@@ -46,6 +47,7 @@ export default class HomePage extends Component {
                                     !command.complete || command.complete && index === this.state.commands.length - 1
                                 )}>
                                     <TypedText
+                                        delay={command.delay}
                                         text={command.text}
                                         onComplete={() => this.command(index)}
                                     />

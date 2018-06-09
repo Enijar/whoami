@@ -3,11 +3,13 @@ import PropTypes from "prop-types";
 
 export default class TypedText extends Component {
     static propTypes = {
+        delay: PropTypes.number,
         speed: PropTypes.number,
         onComplete: PropTypes.func
     };
 
     static defaultProps = {
+        delay: 0,
         speed: 100
     };
 
@@ -19,7 +21,7 @@ export default class TypedText extends Component {
     };
 
     componentDidMount() {
-        this.updateText();
+        this.timeout = setTimeout(() => this.updateText(), this.props.delay);
     }
 
     componentWillUnmount() {
