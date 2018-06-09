@@ -5,8 +5,6 @@
 - [ ] Home
 - [ ] About
 - [ ] Contact
-- [ ] CV
-- [ ] Links (Github, Stackoverflow, etc.)
 - [ ] Blog
 
 ### Functionality
