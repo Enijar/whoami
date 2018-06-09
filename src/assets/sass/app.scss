@@ -1,4 +1,8 @@
+@import "Partials/Reset";
 @import "Partials/Layout";
+
+@import "Components/Terminal";
+@import "Components/Cursor";
 
 @import "Pages/HomePage";
 @import "Pages/AboutPage";

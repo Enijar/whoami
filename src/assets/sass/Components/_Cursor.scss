@@ -1,0 +1,19 @@
+.Cursor {
+  $color: #efefef;
+
+  width: 0.3em;
+  height: 1em;
+  margin-left: -0.2em;
+  background-color: $color;
+  animation: 1s blink step-end infinite;
+
+  @keyframes blink {
+    from, to {
+      background-color: transparent;
+    }
+
+    50% {
+      background-color: $color;
+    }
+  }
+}

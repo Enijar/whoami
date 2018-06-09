@@ -1,13 +1,16 @@
 import React, {Component} from "react";
-import {Link} from "react-router-dom";
+import TypedText from "../Components/TypedText";
+import Terminal from "../Components/Terminal";
 
 export default class HomePage extends Component {
     render() {
         return (
             <div className="HomePage">
-                <h1>Home Page</h1>
+                <h1>James</h1>
 
-                <Link to="/contact">Contact</Link>
+                <Terminal>
+                    <TypedText text="whoami" onComplete={() => console.log('Done')}/>
+                </Terminal>
             </div>
         );
     }
