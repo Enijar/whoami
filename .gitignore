@@ -1,4 +1,7 @@
+# Development files
 .idea/
+
+# Generated files
 node_modules/
 build/
 public/css/
@@ -6,4 +9,11 @@ public/js/
 .DS_Store
 *.log
 *.map
+
+# Secure files
 config.json
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
