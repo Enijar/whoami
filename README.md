@@ -31,3 +31,7 @@ The following commands will start the development and assets watch process, relo
 npm run server:watch
 npm run assets:watch
 ```
+
+### Contributing
+
+Checkout the [TODO](TODO.md) doc for what needs to be worked on.
