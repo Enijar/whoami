@@ -9,12 +9,24 @@ module.exports = ({body, title = 'whoami'}) => `
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <title>${title}</title>
-        <link rel="stylesheet" href="css/app.css">
+        
+        <noscript>
+            <link rel="stylesheet" href="css/app.css">
+        </noscript>
     </head>
 
     <body>
         <div id="root">${body}</div>
-        <script src="js/app.js"></script>
+        
+        <script>
+            var css = document.createElement('link');
+            css.rel = 'stylesheet';
+            css.href = 'css/app.css';
+            css.type = 'text/css';
+            document.head.appendChild(css);
+        </script>
+        
+        <script src="js/app.js" async defer></script>
     </body>
 </html>
 `;
