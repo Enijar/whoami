@@ -14,7 +14,7 @@ module.exports = ({body, title = 'whoami'}) => `
     <body>
         <div id="root">${body}</div>
         
-        <noscript>
+        <noscript id="deferred-styles">
             <link rel="stylesheet" href="css/app.css">
         </noscript>
         
