@@ -18,7 +18,9 @@ module.exports = ({body, title = 'whoami'}) => `
             <link rel="stylesheet" href="css/app.css">
         </noscript>
         
-        <script>
+        <script src="js/app.js" async defer></script>
+        
+        <script async defer>
             var loadDeferredStyles = function() {
             var addStylesNode = document.getElementById("deferred-styles");
             var replacement = document.createElement("div");
@@ -31,8 +33,6 @@ module.exports = ({body, title = 'whoami'}) => `
           if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
           else window.addEventListener('load', loadDeferredStyles);
         </script>
-        
-        <script src="js/app.js" async defer></script>
     </body>
 </html>
 `;
