@@ -22,8 +22,8 @@ module.exports = ({body, title = 'whoami'}) => `
         
         <script src="js/app.js" async defer></script>
         
-        <script async defer>
-            var loadDeferredStyles = function() {
+        <script>
+          var loadDeferredStyles = function() {
             var addStylesNode = document.getElementById("deferred-styles");
             var replacement = document.createElement("div");
             replacement.innerHTML = addStylesNode.textContent;
