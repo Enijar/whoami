@@ -19,10 +19,20 @@ module.exports = {
             },
             {
                 test: /\.(sass|scss)$/,
-                loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader']),
-                options: {
-                    minimize: process.env.NODE_ENV === 'production'
-                }
+                loader: ExtractTextPlugin.extract({
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                url: false,
+                                minimize: process.env.NODE_ENV === 'production'
+                            }
+                        },
+                        {
+                            loader: 'sass-loader'
+                        }
+                    ]
+                })
             }
         ]
     },
