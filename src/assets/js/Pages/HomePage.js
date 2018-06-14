@@ -37,7 +37,23 @@ export default class HomePage extends Component {
     render() {
         return (
             <div className="HomePage">
-                <h1>Home</h1>
+                <h1>whoami?</h1>
+
+                <p>
+                    Organised, creative and methodical person who works through creative and logical problems with often
+                    creative solutions to both mundane and complex problems.
+                </p>
+
+                <p>
+                    A hybrid that crosses the chasm between the arts and technology with creative thoughts and
+                    practices.
+                </p>
+
+                <p>
+                    "I'm a designer, programmer and everything in-between. Websites and web apps are where I express my
+                    creativity and ingenuity. There is no better playground for visual expression and logical problem
+                    solving than the Internet. Thank you Tim Berners-Lee" - James Craig.
+                </p>
 
                 <Terminal>
                     {this.state.commands.map((command, index) => (
