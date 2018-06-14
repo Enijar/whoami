@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "server:build": "npx babel src --out-dir build",
-    "server:watch": "npm run server:build && npx babel --watch src --out-dir build & nodemon build/server --watch build",
+    "server:watch": "npm run server:build && npx babel --watch src --out-dir build & npx nodemon build/server --watch build",
     "server:start": "npm run server:build && node build/server",
     "assets:watch": "npx webpack --mode development --watch --progress --hide-modules",
     "assets:build": "npx webpack --mode production --progress --hide-modules"
